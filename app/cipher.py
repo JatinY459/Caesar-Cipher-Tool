@@ -1,4 +1,5 @@
-LAST_LETTER_CODE = 90 #last letter code for uppercase 'Z'
+#constant values
+LAST_LETTER_CODE = 90 #last letter code for 'Z'
 ALPHABET_RANGE = 26 # 26 letters in the alphabet
 
 def caesar_shift(text, shift):
@@ -18,6 +19,7 @@ def caesar_shift(text, shift):
             result.append(char)
     return result
 
+
 def caesar_decrypt_brute(text):
     results = []
     # Loop through all possible shifts i.e., 25 possible shift values
@@ -26,4 +28,5 @@ def caesar_decrypt_brute(text):
         possible_message = caesar_shift(text, -shift)
         results.append(possible_message)
     return results
+
 
