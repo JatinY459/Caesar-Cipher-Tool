@@ -15,4 +15,4 @@ text = "ifmmp"
 shift = -1
 result = [] # Result string
 
-print(cipher.caesar_decrypt_auto(text))
+cipher.caesar_decrypt_auto(text)

@@ -60,8 +60,8 @@ def caesar_decrypt_auto(text):
         if has_valid_words:
             eligible_results.append(possible_message)
 
-    print(eligible_results)
+    return eligible_results
 
 
 
-# caesar_decrypt_auto("ifmmp")
+# print(caesar_decrypt_auto("ifmmp"))
