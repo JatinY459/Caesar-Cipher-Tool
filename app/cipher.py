@@ -11,6 +11,7 @@ def caesar_shift(text, shift):
         if char.isalpha():
             shifted = ord(char) + shift
             if shifted > LAST_LETTER_CODE:
+                # Coming back to start of alphabet when Z  gone ahead basically we circle back to A
                 shifted -= ALPHABET_RANGE
             result.append(chr(shifted))
         else:
@@ -19,7 +20,10 @@ def caesar_shift(text, shift):
 
 def caesar_decrypt_brute(text):
     results = []
-    for shift in range(ALPHABET_RANGE):
+    # Loop through all possible shifts i.e., 25 possible shift values
+    for shift in range(1, ALPHABET_RANGE):
+        # un-"caesar shifting" the text by shifting back by same number
         possible_message = caesar_shift(text, -shift)
         results.append(possible_message)
     return results
+
