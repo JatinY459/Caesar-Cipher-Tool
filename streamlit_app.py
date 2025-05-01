@@ -60,8 +60,6 @@ elif col2.button("Decrypt by Brute Force"):
     st.switch_page("pages/2_Brute_Force_Decryptor.py")
 elif col1.button("Auto-decrypt a Message"):
     st.switch_page("pages/3_Auto_Decryptor.py")
-elif col2.button("About the App"):
-    st.switch_page("pages/4_About.py")  
 
 st.markdown("---")
 
