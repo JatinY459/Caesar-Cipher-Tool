@@ -11,8 +11,8 @@ import app.cipher as cipher
 # ----- #----- #----- #----- #----- #----- #----- #----- #----- #----- #----- #----- #----- #
 LAST_LETTER_CODE = 90 #last letter code for 'Z'
 ALPHABET_RANGE = 26
-text = "ifmmp"
+text = "ifmmp, xpsme!"
 shift = -1
 result = [] # Result string
 
-cipher.caesar_decrypt_auto(text)
+print(cipher.caesar_decrypt_auto(text)) # works like a charm
