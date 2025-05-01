@@ -16,6 +16,7 @@ with st.container():
                         padding: 20px;
                         border-radius: 10px;
                         box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+                        margin: 1.25rem 0;
                     }
                 </style>
                 <div class='container'>
@@ -30,6 +31,28 @@ with st.container():
 
 st.markdown("""<div style='font-size: 1.2rem; font-weight: 600; margin-top:1rem; margin-bottom:2rem;'>What would you like to do next? Choose an option below.</div>""", unsafe_allow_html=True)
 
+button_style = """
+<style>
+div.stButton > button:first-child {
+    background-color: #000;
+    color: white;
+    height: 3em;
+    width: 70%;
+    border-radius: 10px;
+    border: 2px solid rgb(30,30,30);
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+div.stButton > button:first-child:hover {
+    background-color: rgb(30,30,30);
+    font-weight: 900;
+    transform: scale(1.02);
+}
+</style>
+"""
+st.markdown(button_style, unsafe_allow_html=True)
+
 col1, col2 = st.columns(2)
 if col1.button("Encrypt a Message"):
     st.switch_page("pages/1_Encryptor.py")
@@ -39,3 +62,4 @@ elif col1.button("Auto-decrypt a Message"):
     st.switch_page("pages/3_Auto_Decryptor.py")
 elif col2.button("About the App"):
     st.switch_page("pages/4_About.py")  
+
