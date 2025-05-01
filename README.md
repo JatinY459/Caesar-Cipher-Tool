@@ -60,8 +60,7 @@ streamlit run streamlit_app.py
 
 ## 🌍 Live Demo
 
-👉 [Try it on Streamlit Cloud](#)  
-(_Update this with your actual deployed URL_)
+👉 [Try it on Streamlit Cloud](https://cipher-playground.streamlit.app/)
 
 ## 📚 Tech Stack
 
