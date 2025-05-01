@@ -1,13 +1,14 @@
 import streamlit as st
 
-# from app.cypher import encrypt or other functions as you like
-# Import everything like this
-
 from app.cipher import *
 
-st.title("Caesar Cipher Encryption/Decryption")
+st.title("Caesar Cipher Encryption/Decryption 🔏")
 st.write("This app allows you to encrypt and decrypt messages using the Caesar cipher.")
-message = st.text_input("Enter your message:", key="message")
+
+
+
+
+message = st.text_input("Enter your message:", key="message", placeholder="your message")
 shift = st.number_input("Enter the shift value:", min_value=1, max_value=25, placeholder="Shift value", value=1, key="shift")
 
 
