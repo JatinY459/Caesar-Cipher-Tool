@@ -1,6 +1,18 @@
 import streamlit as st
 from app.cipher import caesar_shift
 
+st.set_page_config(
+    page_title="Cipher Playground",
+    page_icon="🔏",
+    layout="centered",
+    initial_sidebar_state="collapsed",
+    menu_items={
+        "Get Help": "https://streamlit.io",
+        "Report a bug": "https://github.com/yourproject/issues",
+        "About": "### Cipher Playground\nPlay with the Classic Caesar Cipher\nMade by Jatin Yadav!"
+    }
+)
+
 st.title("Caesar Cipher Encryptor 🔏")
 st.write("Encrypt your messages using the Caesar cipher using a custom shift value!")
 
