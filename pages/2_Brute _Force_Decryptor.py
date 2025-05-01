@@ -2,7 +2,7 @@ import streamlit as st
 from app.cipher import caesar_decrypt_brute
 
 st.title("Brute Force Decryptor 🔓")
-st.markdown("Decrypt your messages using the Caesar cipher with brute force!<br>This Brute Force Decryptor gives you all the possible messages using all the shift values from 1 to 25.<br>And one of these messages is the real Decipher-ed message.", unsafe_allow_html=True)
+st.markdown("Decipher your messages using the Caesar cipher with brute force!<br>This Brute Force Decryptor gives you all the possible messages using all the shift values from 1 to 25.<br>And one of these messages is the real Decipher-ed message.", unsafe_allow_html=True)
 
 # Input field & its variable
 message = st.text_input("Enter your message:", key="message", placeholder="your message")

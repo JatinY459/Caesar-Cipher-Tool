@@ -48,7 +48,6 @@ def caesar_decrypt_auto(text):
     words_in_text = [word.strip(string.punctuation) for word in words_in_text]
 
     # Checking if all words in text are common English words or not
-    eligible_results = []
     for possible_message in results:
         # Filtering words in possible message
         possible_words = possible_message.lower().split()
@@ -58,9 +57,9 @@ def caesar_decrypt_auto(text):
         # returns value (true or false) of "word" in common_words for all "word" in possible_words.
         has_valid_words = all(word in common_words for word in possible_words)
         if has_valid_words:
-            eligible_results.append(possible_message)
+            return possible_message
+        return False # If no valid words found, return False
 
-    return eligible_results
 
 
 
