@@ -1,7 +1,7 @@
 import streamlit as st
 from app.cipher import caesar_shift
 
-st.title("Caesar Cipher Encryptor")
+st.title("Caesar Cipher Encryptor 🔏")
 st.write("Encrypt your messages using the Caesar cipher using a custom shift value!")
 
 # Input fields and their variables
