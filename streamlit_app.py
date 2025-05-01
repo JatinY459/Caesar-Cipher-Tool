@@ -63,3 +63,32 @@ elif col1.button("Auto-decrypt a Message"):
 elif col2.button("About the App"):
     st.switch_page("pages/4_About.py")  
 
+st.markdown("---")
+
+st.markdown("<div style='text-align: center; font-weight:800; font-size: 1.5rem;'>Made with ❤️ by Jatin Yadav.</div>", unsafe_allow_html=True)
+st.markdown("""
+            <style>
+                .my-btn {
+                    background-color: #000;
+                    color: white;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    border: 2px solid rgb(30,30,30);
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    transition: 0.3s;
+                    margin: 0 1rem;
+                }
+                .my-btn:hover {
+                    background-color: rgb(30,30,30);
+                    font-weight: 900;
+                    transform: scale(1.02);
+                }
+            </style>
+            <div style='text-align: center; margin-top: 2rem;'>
+                <a href='https://github.com/JatinY459/' class='my-btn' target='_blank'>GitHub</a>
+                <a href='https://www.linkedin.com/in/jatinyadav459/' class='my-btn' target='_blank'>LinkedIn</a>
+                <a href='https://github.com/JatinY459/blob/main/README.md' class='my-btn' target='_blank'>Project Info</a>
+            </div>""", unsafe_allow_html=True)
+st.markdown("---")
