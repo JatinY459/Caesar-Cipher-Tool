@@ -1,17 +1,9 @@
 import streamlit as st
 from app.cipher import caesar_decrypt_brute
+from app.app_config import apply_page_config
 
-st.set_page_config(
-    page_title="Cipher Playground",
-    page_icon="🔏",
-    layout="centered",
-    initial_sidebar_state="collapsed",
-    menu_items={
-        "Get Help": "https://streamlit.io",
-        "Report a bug": "https://github.com/yourproject/issues",
-        "About": "### Cipher Playground\nPlay with the Classic Caesar Cipher\nMade by Jatin Yadav!"
-    }
-)
+# page configuration
+apply_page_config()
 
 st.title("Brute Force Decryptor 🔓")
 st.markdown("Decipher your messages using the Caesar cipher with brute force!<br>This Brute Force Decryptor gives you all the possible messages using all the shift values from 1 to 25.<br>And one of these messages is the real Decipher-ed message.", unsafe_allow_html=True)

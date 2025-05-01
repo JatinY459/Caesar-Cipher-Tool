@@ -1,4 +1,8 @@
 import streamlit as st
+from app.app_config import apply_page_config
+
+# page configuration
+apply_page_config()
 
 st.markdown("""
     <style>
