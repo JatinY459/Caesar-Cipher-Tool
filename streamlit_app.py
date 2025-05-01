@@ -65,7 +65,7 @@ elif col2.button("About the App"):
 
 st.markdown("---")
 
-st.markdown("<div style='text-align: center; font-weight:800; font-size: 1.5rem;'>Made with ❤️ by Jatin Yadav.</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center; font-weight:800; font-size: 1.5rem;'>A simple cipher tool · Developed by Jatin Yadav</div>", unsafe_allow_html=True)
 st.markdown("""
             <style>
                 .my-btn {
@@ -89,6 +89,6 @@ st.markdown("""
             <div style='text-align: center; margin-top: 2rem;'>
                 <a href='https://github.com/JatinY459/' class='my-btn' target='_blank'>GitHub</a>
                 <a href='https://www.linkedin.com/in/jatinyadav459/' class='my-btn' target='_blank'>LinkedIn</a>
-                <a href='https://github.com/JatinY459/blob/main/README.md' class='my-btn' target='_blank'>Project Info</a>
+                <a href='https://github.com/JatinY459/Caesar-Cipher-Tool' class='my-btn' target='_blank'>Project Info</a>
             </div>""", unsafe_allow_html=True)
 st.markdown("---")
