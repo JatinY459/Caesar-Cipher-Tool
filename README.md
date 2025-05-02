@@ -4,7 +4,7 @@ A simple cipher tool to **encrypt**, **brute-force decrypt**, and **auto-decrypt
 
 ## 🚀 Features
 
-- 🔐 **Encrypt a message** using Caesar cipher with a user-defined shift.
+- 🔐 **Encrypt a message** using Caesar cipher with a user-defined shift value.
 - 🔎 **Brute-force decrypt** a ciphered message by generating all 25 possible shifts.
 - 🧠 **Auto-decrypt** intelligently guesses the correct message using a list of 3000 common English words .
 - 🖥️ Clean, minimal **multi-page Streamlit UI**.
