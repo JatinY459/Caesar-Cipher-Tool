@@ -24,12 +24,21 @@ with st.container():
                     What is the Caesar cipher?
                 </div>
                 <div style='font-size: 1.2rem' >
-                    The Caesar Cipher is one of the oldest known encryption techniques. It was used by Julius Caesar himself, in the Caesar cipher the letters are shifted by a constant number to create unreadable messages. This tool lets you explore Caesar-style encryption, test brute-force approach on encrypted messages, and auto-decrypt ciphers using common English words.
+                    The Caesar Cipher is one of the oldest known encryption techniques, dating back to around <b>58–50 BCE</b>. It was famously used by <b>Julius Caesar</b> during his military campaigns to protect confidential messages. In this cipher, each letter in the plaintext is <b>shifted by a fixed number</b> in the alphabet, turning readable text into a scrambled, secret code.
                 </div>
-                </div>""", unsafe_allow_html=True)
+                </div>
+                <div style='font-size: 1.2rem; margin-top: 1.5rem; font-weight: 700;'>
+                    This interactive tool lets you:
+                    <ul>
+                        <li>Encrypt a message using the Caesar cipher with a custom shift value.</li>
+                        <li>Decrypt a message by brute force, trying all possible shift values.</li>
+                        <li>Auto-decrypt a message using a list of common English words.</li>
+                    </ul>
+                </div>
+                """, unsafe_allow_html=True)
 
 
-st.markdown("""<div style='font-size: 1.2rem; font-weight: 600; margin-top:1rem; margin-bottom:2rem;'>What would you like to do next? Choose an option below.</div>""", unsafe_allow_html=True)
+st.markdown("""<div style='font-size: 1.2rem; font-weight: 700; margin-top:1rem; margin-bottom:2rem;'>What would you like to do next? Choose an option below.</div>""", unsafe_allow_html=True)
 
 button_style = """
 <style>
