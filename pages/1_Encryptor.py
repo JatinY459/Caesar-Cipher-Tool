@@ -1,9 +1,12 @@
 import streamlit as st
 from app.cipher import caesar_shift
 from app.app_config import apply_page_config
+from app.utils import apply_btn_styles, add_nav_buttons
 
 # page configuration
 apply_page_config()
+apply_btn_styles()
+
 
 st.title("Caesar Cipher Encryptor 🔏")
 st.write("Encrypt your messages using the Caesar cipher using a custom shift value!")
@@ -21,3 +24,5 @@ if st.button("Encrypt"):
         # st.write("### Caesar Cipher Encryption of Your Message is:")
         # encrypted_message = caesar_shift(message, shift)
         # st.write(f"## {encrypted_message}")
+
+add_nav_buttons("Encryptor")

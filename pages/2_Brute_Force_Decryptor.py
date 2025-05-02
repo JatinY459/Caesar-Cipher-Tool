@@ -1,9 +1,11 @@
 import streamlit as st
 from app.cipher import caesar_decrypt_brute
 from app.app_config import apply_page_config
+from app.utils import apply_btn_styles, add_nav_buttons
 
 # page configuration
 apply_page_config()
+apply_btn_styles()
 
 st.title("Brute Force Decryptor 🔓")
 st.markdown("Decipher your messages using the Caesar cipher with brute force!<br>This Brute Force Decryptor gives you all the possible messages using all the shift values from 1 to 25.<br>And one of these messages is the real Decipher-ed message.", unsafe_allow_html=True)
@@ -23,3 +25,5 @@ if st.button("Decrypt with Brute Force"):
         for i, msg in enumerate(decrypted_messages):
             col1.write(str(i + 1))
             col2.write(msg)
+
+add_nav_buttons("Brute_Force_Decryptor")

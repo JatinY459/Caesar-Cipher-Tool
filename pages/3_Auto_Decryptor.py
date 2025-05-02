@@ -1,9 +1,11 @@
 import streamlit as st
 from app.cipher import caesar_decrypt_auto
 from app.app_config import apply_page_config
+from app.utils import apply_btn_styles, add_nav_buttons
 
 # page configuration
 apply_page_config()
+apply_btn_styles()
 
 st.title("Caesar Cipher Auto Decryptor 🔓")
 st.markdown("Decipher your messages using the Caesar cipher automatically by just entering your message!<br>This Auto Decryptor gives you the most likely deciphered message using a list of 3000 most common words in English.", unsafe_allow_html=True)
@@ -22,3 +24,5 @@ if st.button("Decrypt Automatically"):
                      {decrypted_message}""")
         else:
             st.write("No valid words found in the decrypted message. Please try again with a different message.")
+
+add_nav_buttons("Auto_Decryptor")
