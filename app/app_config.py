@@ -7,7 +7,7 @@ def apply_page_config():
         initial_sidebar_state="collapsed",
         menu_items={
             "Get Help": "https://streamlit.io",
-            "Report a bug": "https://github.com/yourproject/issues",
+            "Report a bug": "https://github.com/JatinY459/Caesar-Cipher-Tool/issues",
             "About": "### Cipher Playground\nPlay with the Classic Caesar Cipher\nMade by Jatin Yadav!"
         }
     )
