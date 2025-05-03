@@ -96,7 +96,7 @@ st.markdown("""
                 .my-btn {
                     display: block;
                     width: 70%;
-                    margin: 0.5rem auto;
+                    margin: 8px auto;
                 }
             }   
             </style>
