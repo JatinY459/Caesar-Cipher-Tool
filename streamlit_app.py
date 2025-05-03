@@ -92,6 +92,13 @@ st.markdown("""
                     font-weight: 900;
                     transform: scale(1.02);
                 }
+             @media (max-width: 600px) {
+                .my-btn {
+                    display: block;
+                    width: 70%;
+                    margin: 0.5rem auto;
+                }
+            }   
             </style>
             <div style='text-align: center; margin-top: 2rem;'>
                 <a href='https://github.com/JatinY459/' class='my-btn' target='_blank'>GitHub</a>
