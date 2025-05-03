@@ -16,3 +16,9 @@ shift = -1
 result = [] # Result string
 
 print(cipher.caesar_decrypt_auto(text)) # works like a charm
+
+with open("app/common-words.txt", "r") as file:
+    # Convert file into set
+    common_words = set(word.strip().lower() for word in file)
+
+print('I' in common_words)

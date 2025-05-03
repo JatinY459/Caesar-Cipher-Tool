@@ -19,11 +19,17 @@ if st.button("Decrypt with Brute Force"):
     else:
         decrypted_messages = caesar_decrypt_brute(message)
         st.header("Possible decrypted messages:")
-        col1, col2 = st.columns(2)
-        col1.write("#### Shift Value")
-        col2.write("#### Possible Message")
-        for i, msg in enumerate(decrypted_messages):
-            col1.write(str(i + 1))
-            col2.write(msg)
+        # col1, col2 = st.columns(2)
+        # col1.write("#### Shift Value")
+        # col2.write("#### Possible Message")
+        # for i, msg in enumerate(decrypted_messages):
+        #     col1.write(str(i + 1))
+        #     col2.write(msg)
+
+        table_data = [{
+            "Shift Value": str(i+1),
+            "Possible Message": msg}
+            for i, msg in enumerate(decrypted_messages)]
+        st.dataframe(table_data, use_container_width=True, hide_index=True)
 
 add_nav_buttons("Brute_Force_Decryptor")

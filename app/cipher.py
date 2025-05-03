@@ -41,7 +41,7 @@ def caesar_decrypt_auto(text):
 
     with open("app/common-words.txt", "r") as file:
         # Convert file into set
-        common_words = set(word.strip() for word in file)
+        common_words = set(word.strip().lower() for word in file)
     
     # Filter words in text
     words_in_text = text.lower().split()

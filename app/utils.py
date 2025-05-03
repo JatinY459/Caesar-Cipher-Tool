@@ -18,6 +18,19 @@ def apply_btn_styles():
             font-weight: 900;
             transform: scale(1.02);
         }
+        @media screen and (max-width: 600px) {
+            div.stButton {
+                display: flex;
+                justify-content: center;
+            }
+
+            div.stButton > button:first-child {
+                width: 80vw !important;
+                max-width: 300px;
+                display: block;
+                margin: 0.5rem auto;
+            }
+        }
         </style>
         """
     st.markdown(button_style, unsafe_allow_html=True)
