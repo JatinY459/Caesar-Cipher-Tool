@@ -71,4 +71,4 @@ streamlit run streamlit_app.py
 ## 📎 Credits
 
 A simple cipher tool. Developed by **Jatin Yadav**.  
-[GitHub](https://github.com/jatinyadav01) · [LinkedIn](https://linkedin.com/in/jatinyadav01)
+[GitHub](https://github.com/Jatiny459) · [LinkedIn](https://linkedin.com/in/jatinyadav459)
